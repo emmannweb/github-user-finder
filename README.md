@@ -1,4 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Github User finder is React App that is fetching data from the Github API. 
+### It has features like filter any user on Github, load more user button and a loader Gif image, just in case the response is delayed
 
 ## Available Scripts
 
