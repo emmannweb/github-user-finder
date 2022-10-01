@@ -8,7 +8,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,11 +23,20 @@
 
 .container_style {
   padding-top: 55px;
+
+}
+
+.loaderstyle {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav.navbar.navbar-expand-lg.navbar-dark.bg-primary {
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
 }
+
 i.fab.fa-github.icone {
   padding-right: 7px;
 }
@@ -37,12 +46,15 @@ i.fab.fa-github.icone {
   height: 150px;
   border-radius: 50%;
 }
+
 .image_container {
   padding-top: 30px;
 }
+
 .cardbox {
   margin-bottom: 36px;
 }
+
 .card {
   box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.1);
 }
@@ -80,6 +92,7 @@ button.btn.btn-default.btn-primary {
   padding: 20px;
   border-top: 3px solid #0062cc;
 }
+
 footer {
   display: flex;
   color: #f1e7e7;

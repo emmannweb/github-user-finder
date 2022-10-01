@@ -4,14 +4,14 @@ import Navbar from "./Components/Navbar";
 import List from "./Components/List";
 import Button from "./Components/Button";
 import Footer from "./Components/Footer";
-import loader from "./loader.gif";
+import Loading from "./Components/Loading";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       Users: [],
-      post_per_page: 4,
+      post_per_page: 8,
       Query: "emma",
       loading: false
     };
@@ -19,7 +19,7 @@ class App extends Component {
 
   loadMoreUser = e => {
     const { post_per_page } = this.state;
-    this.setState({ post_per_page: post_per_page + 4 }, this.fetchUser);
+    this.setState((prevState) => ({ ...prevState, post_per_page: post_per_page + 8 }), this.fetchUser);
 
     console.log("new user added");
   };
@@ -44,6 +44,7 @@ class App extends Component {
       .then(result => this.setState({ Users: result.items, loading: false }))
 
       .catch(err => console.log(err));
+
   };
 
   async componentDidMount() {
@@ -55,14 +56,9 @@ class App extends Component {
       this.setState({ Query: "emmann" }, this.fetchUser);
     } else if (e.target.value.length > 2) {
       this.setState({ Query: e.target.value }, this.fetchUser);
-      this.setState({ post_per_page: 4 }, this.fetchUser);
+      this.setState({ post_per_page: 8 }, this.fetchUser);
     }
 
-    // else {
-    //   this.setState({ post_per_page: 4 }, this.fetchUser);
-    //   this.setState({ Query: "emmann" }, this.fetchUser);
-    // }
-    // console.log(e.target.value);
     e.preventDefault();
   };
 
@@ -77,23 +73,11 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar NavbarSearchProps={this.onChangeSearch} />
-        {!this.state.loading ? (
+        {this.state.loading ? <Loading /> : (
           <List UsersProps={filterUsers} />
-        ) : (
-          <img
-            src={loader}
-            alt="loading..."
-            style={{
-              position: "relative",
-              display: "block",
-              margin: "auto",
-              width: "100px",
-              marginTop: "30px"
-            }}
-          />
         )}
 
-        <Button ButtonEvent={this.loadMoreUser} />
+        {this.state.loading ? '' : <Button ButtonEvent={this.loadMoreUser} />}
 
         <Footer />
       </div>
