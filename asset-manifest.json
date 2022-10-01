@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/github-user-finder/static/css/main.db4f0bd6.chunk.css",
-    "main.js": "/github-user-finder/static/js/main.d062abb3.chunk.js",
-    "main.js.map": "/github-user-finder/static/js/main.d062abb3.chunk.js.map",
-    "runtime-main.js": "/github-user-finder/static/js/runtime-main.5ddc08ba.js",
-    "runtime-main.js.map": "/github-user-finder/static/js/runtime-main.5ddc08ba.js.map",
-    "static/js/2.750fc29d.chunk.js": "/github-user-finder/static/js/2.750fc29d.chunk.js",
-    "static/js/2.750fc29d.chunk.js.map": "/github-user-finder/static/js/2.750fc29d.chunk.js.map",
-    "index.html": "/github-user-finder/index.html",
-    "precache-manifest.f77807cf639cc9af1ceb2f7cea2bb52f.js": "/github-user-finder/precache-manifest.f77807cf639cc9af1ceb2f7cea2bb52f.js",
-    "service-worker.js": "/github-user-finder/service-worker.js",
-    "static/css/main.db4f0bd6.chunk.css.map": "/github-user-finder/static/css/main.db4f0bd6.chunk.css.map",
-    "static/media/loader.gif": "/github-user-finder/static/media/loader.46695451.gif"
+    "main.css": "/find-user-github/static/css/main.e0ff4761.chunk.css",
+    "main.js": "/find-user-github/static/js/main.9a1e003d.chunk.js",
+    "main.js.map": "/find-user-github/static/js/main.9a1e003d.chunk.js.map",
+    "runtime-main.js": "/find-user-github/static/js/runtime-main.7acefad4.js",
+    "runtime-main.js.map": "/find-user-github/static/js/runtime-main.7acefad4.js.map",
+    "static/js/2.0dfdcc4a.chunk.js": "/find-user-github/static/js/2.0dfdcc4a.chunk.js",
+    "static/js/2.0dfdcc4a.chunk.js.map": "/find-user-github/static/js/2.0dfdcc4a.chunk.js.map",
+    "index.html": "/find-user-github/index.html",
+    "precache-manifest.4f32c02ca529e9a3638315f97ca67d3b.js": "/find-user-github/precache-manifest.4f32c02ca529e9a3638315f97ca67d3b.js",
+    "service-worker.js": "/find-user-github/service-worker.js",
+    "static/css/main.e0ff4761.chunk.css.map": "/find-user-github/static/css/main.e0ff4761.chunk.css.map",
+    "static/media/loader.gif": "/find-user-github/static/media/loader.46695451.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.5ddc08ba.js",
-    "static/js/2.750fc29d.chunk.js",
-    "static/css/main.db4f0bd6.chunk.css",
-    "static/js/main.d062abb3.chunk.js"
+    "static/js/runtime-main.7acefad4.js",
+    "static/js/2.0dfdcc4a.chunk.js",
+    "static/css/main.e0ff4761.chunk.css",
+    "static/js/main.9a1e003d.chunk.js"
   ]
 }
